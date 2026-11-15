@@ -82,8 +82,9 @@ ul.task-list li input[type="checkbox"] {
     </a>
 
     <nav class="site-nav" aria-label="Main navigation">
-      <a href="#about">ABOUT</a>
-      <a href="#projects">PROJECTS</a>
+      <a href="#summary">SUMMARY</a>
+      <a href="#experience">EXPERIENCE</a>
+      <a href="#education">EDUCATION</a>
     </nav>
   </header>
 
@@ -98,7 +99,9 @@ ul.task-list li input[type="checkbox"] {
         </p>
 
         <div class="hero-actions">
-          <a class="btn btn-dark" href="#projects">VIEW PROJECTS ↘</a>
+          <a class="btn btn-dark" href="#experience">
+            EXPLORE MY WORK ↘
+          </a>
           <button id="rabbitTalk" class="btn btn-outline" type="button">
             SAY HI TO BUNNY ↗
           </button>
@@ -114,8 +117,8 @@ ul.task-list li input[type="checkbox"] {
       </div>
     </section>
 
-    <section class="about-section section-wrap" id="about">
-      <div class="section-marker">01 / ABOUT</div>
+    <section class="about-section section-wrap" id="summary">
+      <div class="section-marker">01 / SUMMARY</div>
 
       <div class="about-grid">
         <h2 class="anchored">A little<br><span>about me.</span></h2>
@@ -131,19 +134,21 @@ ul.task-list li input[type="checkbox"] {
             and machine learning.
           </p>
           <p>
-            I hold an M.Sc. in Computing Science from the University
-            of Groningen. My EngD Data Science work at TU Eindhoven
-            combines research with practical industry challenges.
+            I enjoy translating stakeholder needs into technical
+            solutions and building reliable datasets that support
+            useful decisions.
           </p>
         </div>
       </div>
     </section>
 
-    <section class="explore-section section-wrap" id="projects">
+    <section class="explore-section section-wrap" id="experience">
       <div class="section-head">
         <div>
-          <div class="section-marker">02 / PROJECTS</div>
-          <h2 class="anchored">My <em>work.</em></h2>
+          <div class="section-marker">
+            02 / PROFESSIONAL EXPERIENCE
+          </div>
+          <h2 class="anchored">Professional <em>Experience.</em></h2>
         </div>
       </div>
 
@@ -173,29 +178,6 @@ ul.task-list li input[type="checkbox"] {
           </span>
         </article>
 
-        <article class="feature-card card-yellow">
-          <div class="card-top">
-            <span>ENEXIS · 2024</span>
-          </div>
-          <h3 class="anchored">Electricity Forecasting</h3>
-          <p>
-            Developed PySpark workflows in Azure Databricks to prepare
-            electricity load records for forecasting.
-          </p>
-          <p>
-            Created lag, rolling average, and calendar features.
-            The data processing workflow ran in 1 minute and 2 seconds
-            in the development environment.
-          </p>
-          <p>
-            Used chronological training for a GRU forecasting model,
-            achieving 7.63% MAPE.
-          </p>
-          <span class="card-bottom">
-            PYSPARK · DATABRICKS · GRU
-          </span>
-        </article>
-
         <article class="feature-card card-mint">
           <div class="card-top">
             <span>PHILIPS · 2024–2025</span>
@@ -218,57 +200,250 @@ ul.task-list li input[type="checkbox"] {
           </span>
         </article>
 
-        <article class="feature-card card-lilac">
+        <article class="feature-card card-yellow">
           <div class="card-top">
-            <span>UNIVERSITY OF GRONINGEN · 2021</span>
+            <span>ENEXIS · 2024</span>
           </div>
-          <h3 class="anchored">Learning from Brain Scans</h3>
+          <h3 class="anchored">Electricity Forecasting</h3>
           <p>
-            Integrated FDG PET data from three hospitals into a consistent
-            dataset and corrected hospital-specific bias for my
-            master’s thesis.
+            Developed PySpark workflows in Azure Databricks to prepare
+            electricity load records for forecasting.
           </p>
           <p>
-            Extended and evaluated a neural network classifier on
-            175 cases, achieving approximately 85% AUROC,
-            and assessed feature relevance.
+            Created lag, rolling average, and calendar features.
+            The processing workflow ran in 1 minute and 2 seconds
+            in the development environment.
+          </p>
+          <p>
+            Used chronological training for a GRU forecasting model,
+            achieving 7.63% MAPE.
           </p>
           <span class="card-bottom">
-            NEURAL NETWORKS · NEUROIMAGING · MODEL EVALUATION
+            PYSPARK · DATABRICKS · GRU
+          </span>
+        </article>
+
+        <article class="feature-card card-mint">
+          <div class="card-top">
+            <span>INNO4HEALTH · 2024</span>
+          </div>
+          <h3 class="anchored">AFib Detection on ECG</h3>
+          <p>
+            Processed ECG recordings into 30-second windows and
+            identified 21 features relevant to AFib detection.
+          </p>
+          <p>
+            Worked in a five-person Agile team, sharing findings
+            with stakeholders during weekly reviews.
+          </p>
+          <span class="card-bottom">
+            ECG ANALYSIS · FEATURE EXTRACTION
+          </span>
+        </article>
+
+        <article class="feature-card card-yellow">
+          <div class="card-top">
+            <span>KNSB · ALLIANDER · OMRON · 2024</span>
+          </div>
+          <h3 class="anchored">Industry Collaborations</h3>
+          <p>
+            <strong>Omron:</strong> Analyzed 42 machine sensor
+            signals for equipment fault indicators.
+          </p>
+          <p>
+            <strong>Alliander:</strong> Grouped 30,000 customer
+            records into eight load-profile segments.
+          </p>
+          <p>
+            <strong>KNSB:</strong> Led a team analyzing over
+            500,000 skating records to compare engagement.
+          </p>
+          <span class="card-bottom">
+            DATA ANALYSIS · CLUSTERING · TEAM LEADERSHIP
+          </span>
+        </article>
+
+        <article class="feature-card card-lilac">
+          <div class="card-top">
+            <span>TATA CONSULTANCY SERVICES · 2016–2018</span>
+          </div>
+          <h3 class="anchored">Software Developer</h3>
+          <p>
+            For client Morgan Stanley, supported production batch
+            job migrations across regions.
+          </p>
+          <p>
+            Monitored execution against SLA windows and reported
+            failed or delayed runs.
+          </p>
+          <span class="card-bottom">
+            BATCH OPERATIONS · PRODUCTION SUPPORT
           </span>
         </article>
       </div>
     </section>
 
-    <section class="about-section section-wrap" id="experience">
-      <div class="section-marker">03 / EXPERIENCE</div>
+    <section class="explore-section section-wrap" id="skills">
+      <div class="section-head">
+        <div>
+          <div class="section-marker">03 / SKILLS</div>
+          <h2 class="anchored">My <em>skills.</em></h2>
+        </div>
+      </div>
+
+      <div class="card-grid">
+        <article class="feature-card card-lilac">
+          <div class="card-top"><span>01</span></div>
+          <h3 class="anchored">Programming</h3>
+          <p>Python</p>
+          <p>SQL</p>
+          <p>PySpark</p>
+        </article>
+
+        <article class="feature-card card-yellow">
+          <div class="card-top"><span>02</span></div>
+          <h3 class="anchored">Data Engineering</h3>
+          <p>
+            Azure Databricks, Delta Lake, ETL pipelines,
+            data transformation, and data modeling.
+          </p>
+          <p>
+            Azure DevOps, GitHub, CI/CD, and model monitoring.
+          </p>
+        </article>
+
+        <article class="feature-card card-mint">
+          <div class="card-top"><span>03</span></div>
+          <h3 class="anchored">AI &amp; Machine Learning</h3>
+          <p>XGBoost · GRU · LSTM</p>
+          <span class="card-bottom">
+            COLLABORATION · AGILE / SCRUM
+          </span>
+        </article>
+      </div>
+    </section>
+
+    <section class="about-section section-wrap" id="languages">
+      <div class="section-marker">04 / LANGUAGES</div>
 
       <div class="about-grid">
-        <h2 class="anchored">Beyond<br><span>the projects.</span></h2>
-
+        <h2 class="anchored">Languages</h2>
         <div class="about-text">
-          <p>
-            <strong>Tata Consultancy Services · 2016–2018</strong>
-          </p>
-          <p>
-            For client Morgan Stanley, supported production batch job
-            migrations across regions, monitored execution against SLA
-            windows, and reported failed or delayed runs.
-          </p>
-
-          <p><strong>Other industry projects · 2024</strong></p>
-          <p>
-            Analyzed 42 machine sensor signals for Omron, clustered
-            30,000 customer records into eight load-profile segments
-            for Alliander, and led a team analyzing over 500,000
-            skating records for KNSB.
-          </p>
+          <p>English · Hindi · Marathi</p>
+          <p>Dutch — A1/A2</p>
         </div>
       </div>
     </section>
 
+    <section class="explore-section section-wrap" id="education">
+      <div class="section-head">
+        <div>
+          <div class="section-marker">05 / EDUCATION</div>
+          <h2 class="anchored">My <em>education.</em></h2>
+        </div>
+      </div>
+
+      <div class="card-grid">
+        <article class="feature-card card-lilac">
+          <div class="card-top">
+            <span>TU EINDHOVEN · 2024–2026</span>
+          </div>
+          <h3 class="anchored">EngD Data Science</h3>
+          <p>
+            Industry-focused data science program (contract),
+            combining research and practical challenges.
+          </p>
+        </article>
+
+        <article class="feature-card card-yellow">
+          <div class="card-top">
+            <span>UNIVERSITY OF GRONINGEN · 2018–2021</span>
+          </div>
+          <h3 class="anchored">M.Sc. Computing Science</h3>
+          <p>
+            Research in neural networks and neuroimaging.
+          </p>
+        </article>
+
+        <article class="feature-card card-mint">
+          <div class="card-top">
+            <span>SAVITRIBAI PHULE PUNE UNIVERSITY · 2011–2015</span>
+          </div>
+          <h3 class="anchored">B.E. Computer Engineering</h3>
+          <p>
+            Bachelor’s degree in Computer Engineering.
+          </p>
+        </article>
+
+        <article class="feature-card card-lilac">
+          <div class="card-top">
+            <span>UNIVERSITY OF GRONINGEN · 2021</span>
+          </div>
+          <h3 class="anchored">Thesis: Relevance Learning in Neuroimaging</h3>
+          <p>
+            Integrated FDG PET data from three hospitals into
+            a consistent dataset and corrected hospital-specific bias.
+          </p>
+          <p>
+            Extended and evaluated a neural network classifier
+            on 175 cases, achieving approximately 85% AUROC,
+            and assessed feature relevance.
+          </p>
+          <span class="card-bottom">
+            NEURAL NETWORKS · NEUROIMAGING
+          </span>
+        </article>
+
+        <article class="feature-card card-yellow">
+          <div class="card-top">
+            <span>UNIVERSITY OF GRONINGEN · 2020</span>
+          </div>
+          <h3 class="anchored">Internship: Hidden Unit Specialization</h3>
+          <p>
+            Investigated how dataset size and activation functions
+            affected neural network generalization and hidden
+            unit specialization.
+          </p>
+          <span class="card-bottom">
+            NEURAL NETWORKS · RELU · SIGMOID
+          </span>
+        </article>
+      </div>
+    </section>
+
+    <section class="explore-section section-wrap" id="training">
+      <div class="section-head">
+        <div>
+          <div class="section-marker">
+            06 / TRAINING &amp; HACKATHONS
+          </div>
+          <h2 class="anchored">Training &amp; <em>Hackathons.</em></h2>
+        </div>
+      </div>
+
+      <div class="card-grid">
+        <article class="feature-card card-mint">
+          <div class="card-top">
+            <span>TU EINDHOVEN · APRIL 2025</span>
+          </div>
+          <h3 class="anchored">Spring HPC School</h3>
+          <p>
+            Completed training at the Eindhoven Supercomputing Center.
+          </p>
+        </article>
+
+        <article class="feature-card card-lilac">
+          <div class="card-top">
+            <span>TU EINDHOVEN / JADS · APRIL 2024</span>
+          </div>
+          <h3 class="anchored">Solve with Google Hackathon</h3>
+          <p>Participated as a member of Team 3.</p>
+        </article>
+      </div>
+    </section>
+
     <section class="closing-section section-wrap" id="questions">
-      <div class="section-marker">04 / QUESTIONS</div>
+      <div class="section-marker">07 / QUESTIONS</div>
       <h2 class="anchored">Have a <em>question?</em></h2>
 
       <!-- Connect a form service before enabling submissions. -->
@@ -286,6 +461,7 @@ ul.task-list li input[type="checkbox"] {
         <button class="btn btn-dark" type="submit" disabled="">
           SEND QUESTION
         </button>
+
         <p id="form-status" class="small-note">
           The question form is not available yet.
         </p>
@@ -341,6 +517,7 @@ ul.task-list li input[type="checkbox"] {
   (() => {
     const button = document.getElementById("rabbitTalk");
     const bubble = document.getElementById("speech");
+
     const messages = [
       "Eh… what’s up, doc?",
       "One carrot at a time!",
