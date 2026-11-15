@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A simple, playful Quarto website with a cartoon rabbit mascot.">
+  <meta name="color-scheme" content="light">
+  <title>Little Corner — A Playful Website</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<div class="bunny-site">
+  <header class="site-header">
+    <a class="site-logo" href="#top" aria-label="Little Corner home"><span class="logo-mark" aria-hidden="true">✦</span><span>little corner<span class="logo-dot">.</span></span></a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#about">ABOUT</a>
+      <a href="#explore">EXPLORE</a>
+      <a class="nav-pill" href="#note">SAY HELLO <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-star">✳</span> A LITTLE WEBSITE EXPERIMENT <span class="serial">/ NO. 001</span></div>
+        <h1 id="hero-title">What’s up,<br><em>doc?</em><span class="title-spark" aria-hidden="true">✴</span></h1>
+        <p class="hero-description">Welcome to a cheerful little corner of the internet. It's a simple <strong>Quarto website</strong> with a cartoon-rabbit friend, a splash of color, and room to grow.</p>
+        <div class="hero-actions">
+          <a class="btn btn-dark" href="#explore">TAKE A LOOK <span aria-hidden="true">↘</span></a>
+          <button id="rabbitTalk" class="btn btn-outline" type="button">SAY HI TO BUNNY <span aria-hidden="true">↗</span></button>
+        </div>
+        <div class="hero-hint"><span class="hint-line" aria-hidden="true"></span> JUST FOR FUN. NO BIG INTRODUCTIONS NEEDED.</div>
+      </div>
+      <div class="hero-art" aria-label="A fun cartoon rabbit illustration holding a carrot">
+        <span class="art-sun" aria-hidden="true"></span>
+        <span class="art-doodle art-doodle-one" aria-hidden="true">✳</span>
+        <span class="art-doodle art-doodle-two" aria-hidden="true">✦</span>
+        <span class="art-doodle art-doodle-three" aria-hidden="true">✳</span>
+        <span class="art-badge">100% GOOD VIBES ↗</span>
+        <img src="../assets/rabbit.svg" alt="A friendly gray cartoon rabbit with pink ears, buck teeth, and an orange carrot" width="540" height="540" />
+        <div class="speech" id="speech" aria-live="polite">Eh… what’s up, doc?</div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true"><div class="marquee-track"><span>STAY CURIOUS</span><b>✳</b><span>KEEP CREATING</span><b>✳</b><span>EAT YOUR CARROTS</span><b>✳</b><span>HAVE SOME FUN</span><b>✳</b><span>STAY CURIOUS</span><b>✳</b><span>KEEP CREATING</span><b>✳</b><span>EAT YOUR CARROTS</span><b>✳</b><span>HAVE SOME FUN</span><b>✳</b></div></div>
+
+    <section class="about-section section-wrap" id="about" aria-labelledby="about-title">
+      <div class="section-marker">01 / A QUICK HELLO</div>
+      <div class="about-grid">
+        <h2 id="about-title">A tiny site.<br><span>A happy start.</span></h2>
+        <div class="about-text"><p>Every big project begins somewhere. This one's intentionally simple: a friendly mascot, a clean layout, and a few places to add things later.</p><p class="small-note">No real name, email, location, or social accounts are shown here. That can stay exactly as it is until you choose otherwise.</p></div>
+      </div>
+    </section>
+
+    <section class="explore-section section-wrap" id="explore" aria-labelledby="explore-title">
+      <div class="section-head"><div><div class="section-marker">02 / SPACE TO GROW</div><h2 id="explore-title">A little of <em>everything.</em></h2></div><p>Three blank spaces for whatever you want to share. No pressure to fill them today.</p></div>
+      <div class="card-grid">
+        <article class="feature-card card-lilac"><div class="card-top"><span>01 / PROJECTS</span><span aria-hidden="true">↗</span></div><div class="card-icon" aria-hidden="true">✳</div><h3>Things I make</h3><p>A future home for little projects, experiments, and ideas.</p><span class="card-bottom">COMING TO LIFE SOON</span></article>
+        <article class="feature-card card-yellow"><div class="card-top"><span>02 / NOTES</span><span aria-hidden="true">↗</span></div><div class="card-icon" aria-hidden="true">✎</div><h3>Things I learn</h3><p>A place for notes, discoveries, and the occasional happy accident.</p><span class="card-bottom">WORDS WILL GO HERE</span></article>
+        <article class="feature-card card-mint"><div class="card-top"><span>03 / JUST FOR FUN</span><span aria-hidden="true">↗</span></div><div class="card-icon carrot" aria-hidden="true">🥕</div><h3>Things I love</h3><p>A friendly reminder that websites don't always need to be serious.</p><span class="card-bottom">MORE FUN AHEAD</span></article>
+      </div>
+    </section>
+
+    <section class="closing-section section-wrap" id="note" aria-labelledby="closing-title">
+      <div class="section-marker">03 / ONE LAST THING</div>
+      <h2 id="closing-title">That’s all<br><em>for now.</em> <span aria-hidden="true">✳</span></h2>
+      <p>A small start is still a start. Come back when you're ready to add your own projects, writing, and personality.</p>
+      <a class="btn btn-dark" href="#top">BACK TO THE TOP <span aria-hidden="true">↑</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>MADE WITH CURIOSITY ✦</span><span>UNOFFICIAL CARTOON FAN TRIBUTE · NOT AFFILIATED WITH WARNER BROS.</span><a href="#top">TOP ↑</a></footer>
+</div>
+
+<script>
+  (() => {
+    const button = document.getElementById('rabbitTalk');
+    const bubble = document.getElementById('speech');
+    const messages = ["Eh… what’s up, doc?", "One carrot at a time!", "Keep on hopping!", "You're doing great, doc!", "Stay curious, pal!"];
+    let current = 0;
+    if (button && bubble) button.addEventListener('click', () => {
+      current = (current + 1) % messages.length;
+      bubble.textContent = messages[current];
+      bubble.classList.remove('pop');
+      void bubble.offsetWidth;
+      bubble.classList.add('pop');
+    });
+  })();
+</script>
+
+</body>
+</html>

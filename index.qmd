@@ -1,0 +1,9 @@
+
+
+---
+pagetitle: "Little Corner"
+title-block-banner: false
+page-layout: full
+---
+
+{{< include content/home.html >}}
