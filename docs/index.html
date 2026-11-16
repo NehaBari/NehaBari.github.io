@@ -71,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page" id="quarto-document-content" tabindex="-1"><header id="title-block-header" class="quarto-title-block"><h1 id="hero-title" class="title display-7">
+<main class="content column-page" id="quarto-document-content" tabindex="-1"><header id="title-block-header" class="quarto-title-block"><h1 class="title display-7">
           What’s up,<br><em>doc?</em>
           <span class="title-spark" aria-hidden="true">✴</span>
         </h1></header>
@@ -82,14 +82,14 @@ ul.task-list li input[type="checkbox"] {
     </a>
 
     <nav class="site-nav" aria-label="Main navigation">
-      <a href="#summary">SUMMARY</a>
+      <a href="#summary">ABOUT</a>
       <a href="#experience">EXPERIENCE</a>
       <a href="#education">EDUCATION</a>
     </nav>
   </header>
 
   <main id="top">
-    <section class="hero" aria-labelledby="hero-title">
+    <section class="hero">
       <div class="hero-copy">
         
 
@@ -117,6 +117,7 @@ ul.task-list li input[type="checkbox"] {
       </div>
     </section>
 
+    <!-- SUMMARY -->
     <section class="about-section section-wrap" id="summary">
       <div class="section-marker">01 / SUMMARY</div>
 
@@ -125,207 +126,378 @@ ul.task-list li input[type="checkbox"] {
 
         <div class="about-text">
           <p>
-            I’m Neha Bari Tamboli. My experience includes industry
-            projects with TU Eindhoven, Philips, and Enexis.
+            I’m Neha Bari Tamboli. My work brings together data
+            engineering, analysis, and machine learning, with
+            industry projects across energy, healthcare, and
+            restaurant digitalization.
           </p>
           <p>
-            I work with Python, SQL, PySpark, Azure Databricks,
-            and Delta Lake, across data processing, forecasting,
-            and machine learning.
+            Through projects with TU Eindhoven, Enexis, and Philips,
+            I’ve worked on preparing datasets, checking data quality,
+            developing predictive models, and translating stakeholder
+            requirements into technical work.
           </p>
           <p>
-            I enjoy translating stakeholder needs into technical
-            solutions and building reliable datasets that support
-            useful decisions.
+            My earlier experience at Tata Consultancy Services,
+            supporting Morgan Stanley’s batch operations, also
+            introduced me to the practical demands of production
+            systems and reliable execution.
+          </p>
+          <p>
+            Below is a closer look at the problems I worked on,
+            what I contributed, and the results.
           </p>
         </div>
       </div>
     </section>
 
+    <!-- PROFESSIONAL EXPERIENCE -->
     <section class="explore-section section-wrap" id="experience">
-      <div class="section-head">
-        <div>
-          <div class="section-marker">
-            02 / PROFESSIONAL EXPERIENCE
-          </div>
-          <h2 class="anchored">Professional <em>Experience.</em></h2>
-        </div>
+  <div class="section-head">
+    <div>
+      <div class="section-marker">02 / PROFESSIONAL EXPERIENCE</div>
+      <h2 class="anchored">The problem.<br><em>My approach. The result.</em></h2>
+    </div>
+    <p>
+      A closer look at my work, from preparing reliable data
+      to evaluating models and communicating findings.
+    </p>
+  </div>
+
+  <div class="experience-grid">
+
+    <!-- RESTAURANT DIGITALIZATION -->
+    <article class="case-study card-lilac">
+      <p class="case-meta">TU EINDHOVEN · 2025–2026</p>
+      <h3 class="anchored">Restaurant Digitalization</h3>
+      <p class="case-role">EngD industry project</p>
+
+      <p>
+        How can restaurant and customer needs inform an AI
+        ordering assistant—and how can its data support
+        order completion prediction?
+      </p>
+
+      <div class="case-result">
+        <strong>0.79</strong>
+        <span>Approximate ROC AUC for order completion prediction</span>
       </div>
 
-      <div class="card-grid">
-        <article class="feature-card card-lilac">
-          <div class="card-top">
-            <span>TU EINDHOVEN · 2025–2026</span>
-          </div>
-          <h3 class="anchored">Restaurant Digitalization</h3>
-          <p>
-            Gathered input from four restaurants and 65 customers,
-            translating the findings into 35 prioritized requirements
-            for an AI ordering assistant.
-          </p>
-          <p>
-            Built a scheduled Databricks workflow to validate
-            221 simulated customer sessions and stored validated
-            data in Delta Lake.
-          </p>
-          <p>
-            Analyzed ordering interface variants with SQL and developed
-            Logistic Regression and XGBoost models for order completion,
-            achieving approximately 0.79 ROC AUC.
-          </p>
-          <span class="card-bottom">
-            PYTHON · SQL · DATABRICKS · DELTA LAKE
-          </span>
-        </article>
+      <h4 class="anchored">My contribution</h4>
+      <p>
+        Gathered input from four restaurants and 65 customers,
+        translating the findings into 35 prioritized requirements.
+        Built a scheduled Databricks workflow to validate
+        221 simulated customer sessions.
+      </p>
 
-        <article class="feature-card card-mint">
-          <div class="card-top">
-            <span>PHILIPS · 2024–2025</span>
-          </div>
-          <h3 class="anchored">Digital Pathology</h3>
+      <div class="case-flow" aria-label="Project workflow">
+        <span>Session data</span>
+        <span aria-hidden="true">→</span>
+        <span>Validation</span>
+        <span aria-hidden="true">→</span>
+        <span>Delta Lake</span>
+        <span aria-hidden="true">→</span>
+        <span>Prediction</span>
+      </div>
+
+      <details>
+        <summary>Read about my approach</summary>
+
+        <div class="case-detail">
+          <h4 class="anchored">Checking the data</h4>
           <p>
-            Managed an Agile project exploring intelligent assignment
-            of pathology cases, working with Philips’ Pathology team.
+            Checked sessions for missing, duplicate, and invalid
+            records. Stored validated data in Delta Lake and
+            prepared structured datasets for modeling.
+          </p>
+
+          <h4 class="anchored">Testing the experience</h4>
+          <p>
+            Developed and A/B tested ordering interface variants,
+            using SQL to analyze order completion rates.
+          </p>
+
+          <h4 class="anchored">Developing the models</h4>
+          <p>
+            Developed Logistic Regression and XGBoost models
+            to predict order completion, achieving approximately
+            0.79 ROC AUC.
           </p>
           <p>
-            Assessed database schemas and documented six high-priority
+            ROC AUC measures how well a model distinguishes
+            completed orders from incomplete orders across
+            classification thresholds. It is not the same
+            as percentage accuracy.
+          </p>
+
+          <h4 class="anchored">Data context</h4>
+          <p>
+            The validation workflow covered 221 simulated sessions.
+            I also worked with data stewards on responsible
+            handling of customer and restaurant data.
+          </p>
+        </div>
+      </details>
+
+      <p class="case-tools">
+        Python · SQL · Azure Databricks · Delta Lake · XGBoost
+      </p>
+    </article>
+
+    <!-- ELECTRICITY FORECASTING -->
+    <article class="case-study card-yellow">
+      <p class="case-meta">ENEXIS · 2024</p>
+      <h3 class="anchored">Electricity Forecasting</h3>
+      <p class="case-role">EngD industry project</p>
+
+      <p>
+        Preparing electricity load records and time-based features
+        for infeed and grid loss forecasting.
+      </p>
+
+      <div class="case-result">
+        <strong>7.63%</strong>
+        <span>MAPE for the GRU forecasting model</span>
+      </div>
+
+      <h4 class="anchored">My contribution</h4>
+      <p>
+        Developed PySpark processing workflows in Azure Databricks
+        and engineered lag, rolling average, and calendar features
+        for downstream forecasting.
+      </p>
+
+      <div class="case-flow" aria-label="Project workflow">
+        <span>Load records</span>
+        <span aria-hidden="true">→</span>
+        <span>Transformation</span>
+        <span aria-hidden="true">→</span>
+        <span>Feature tables</span>
+        <span aria-hidden="true">→</span>
+        <span>GRU model</span>
+      </div>
+
+      <details>
+        <summary>Read about my approach</summary>
+
+        <div class="case-detail">
+          <h4 class="anchored">Understanding the requirements</h4>
+          <p>
+            Collaborated with a lead Data Scientist to understand
+            the supplied datasets and clarify business requirements.
+          </p>
+
+          <h4 class="anchored">Preparing forecasting features</h4>
+          <p>
+            Used PySpark window functions to create lag features,
+            rolling averages, and calendar features. Prepared
+            the resulting data as Databricks feature tables.
+          </p>
+
+          <h4 class="anchored">Training and results</h4>
+          <p>
+            Used chronological training for a GRU model,
+            achieving 7.63% mean absolute percentage error.
+            MAPE expresses forecast error relative to actual values.
+          </p>
+
+          <h4 class="anchored">Processing performance</h4>
+          <p>
+            The data processing workflow ran in 1 minute and
+            2 seconds in the development environment. This is
+            a development runtime, rather than a production benchmark.
+          </p>
+        </div>
+      </details>
+
+      <p class="case-tools">
+        PySpark · Azure Databricks · Feature Engineering · GRU
+      </p>
+    </article>
+
+    <!-- DIGITAL PATHOLOGY -->
+    <article class="case-study card-mint">
+      <p class="case-meta">PHILIPS · 2024–2025</p>
+      <h3 class="anchored">Digital Pathology</h3>
+      <p class="case-role">EngD industry project · Project manager</p>
+
+      <p>
+        Assessing the data needed to support intelligent assignment
+        of pathology cases to pathologists.
+      </p>
+
+      <div class="case-result">
+        <strong>11</strong>
+        <span>Data quality gaps documented and prioritized</span>
+      </div>
+
+      <h4 class="anchored">My contribution</h4>
+      <p>
+        Managed an Agile project with Philips’ Pathology team.
+        Assessed schemas, aligned open-source datasets with business
+        definitions, and communicated the implications of data gaps.
+      </p>
+
+      <div class="case-flow" aria-label="Project workflow">
+        <span>Schema review</span>
+        <span aria-hidden="true">→</span>
+        <span>Gap assessment</span>
+        <span aria-hidden="true">→</span>
+        <span>Data alignment</span>
+        <span aria-hidden="true">→</span>
+        <span>Recommendations</span>
+      </div>
+
+      <details>
+        <summary>Read about my approach</summary>
+
+        <div class="case-detail">
+          <h4 class="anchored">Assessing readiness</h4>
+          <p>
+            Reviewed database schemas and data models with
+            the Pathology team, documenting six high-priority
             and five medium-priority data quality gaps.
           </p>
-          <p>
-            Aligned open-source data with Philips’ schema and explained
-            the implications of data gaps to nontechnical stakeholders.
-          </p>
-          <span class="card-bottom">
-            DATA QUALITY · DATA MODELING · AGILE
-          </span>
-        </article>
 
-        <article class="feature-card card-yellow">
-          <div class="card-top">
-            <span>ENEXIS · 2024</span>
-          </div>
-          <h3 class="anchored">Electricity Forecasting</h3>
+          <h4 class="anchored">Aligning definitions</h4>
           <p>
-            Developed PySpark workflows in Azure Databricks to prepare
-            electricity load records for forecasting.
+            Integrated open-source datasets into Philips’ schema,
+            aligning case, pathologist, and tissue attributes
+            with consistent business definitions.
           </p>
-          <p>
-            Created lag, rolling average, and calendar features.
-            The processing workflow ran in 1 minute and 2 seconds
-            in the development environment.
-          </p>
-          <p>
-            Used chronological training for a GRU forecasting model,
-            achieving 7.63% MAPE.
-          </p>
-          <span class="card-bottom">
-            PYSPARK · DATABRICKS · GRU
-          </span>
-        </article>
 
-        <article class="feature-card card-mint">
-          <div class="card-top">
-            <span>INNO4HEALTH · 2024</span>
-          </div>
-          <h3 class="anchored">AFib Detection on ECG</h3>
+          <h4 class="anchored">Making the findings useful</h4>
           <p>
-            Processed ECG recordings into 30-second windows and
-            identified 21 features relevant to AFib detection.
+            Explained to nontechnical stakeholders why the gaps
+            mattered and which attributes a model trained on
+            open-source data relied on for case assignment.
           </p>
-          <p>
-            Worked in a five-person Agile team, sharing findings
-            with stakeholders during weekly reviews.
-          </p>
-          <span class="card-bottom">
-            ECG ANALYSIS · FEATURE EXTRACTION
-          </span>
-        </article>
 
-        <article class="feature-card card-yellow">
-          <div class="card-top">
-            <span>KNSB · ALLIANDER · OMRON · 2024</span>
-          </div>
-          <h3 class="anchored">Industry Collaborations</h3>
+          <h4 class="anchored">The outcome</h4>
           <p>
-            <strong>Omron:</strong> Analyzed 42 machine sensor
-            signals for equipment fault indicators.
+            Delivered a prioritized assessment and stakeholder
+            recommendations about the data needed for modeling.
           </p>
-          <p>
-            <strong>Alliander:</strong> Grouped 30,000 customer
-            records into eight load-profile segments.
-          </p>
-          <p>
-            <strong>KNSB:</strong> Led a team analyzing over
-            500,000 skating records to compare engagement.
-          </p>
-          <span class="card-bottom">
-            DATA ANALYSIS · CLUSTERING · TEAM LEADERSHIP
-          </span>
-        </article>
-
-        <article class="feature-card card-lilac">
-          <div class="card-top">
-            <span>TATA CONSULTANCY SERVICES · 2016–2018</span>
-          </div>
-          <h3 class="anchored">Software Developer</h3>
-          <p>
-            For client Morgan Stanley, supported production batch
-            job migrations across regions.
-          </p>
-          <p>
-            Monitored execution against SLA windows and reported
-            failed or delayed runs.
-          </p>
-          <span class="card-bottom">
-            BATCH OPERATIONS · PRODUCTION SUPPORT
-          </span>
-        </article>
-      </div>
-    </section>
-
-    <section class="explore-section section-wrap" id="skills">
-      <div class="section-head">
-        <div>
-          <div class="section-marker">03 / SKILLS</div>
-          <h2 class="anchored">My <em>skills.</em></h2>
         </div>
-      </div>
+      </details>
 
-      <div class="card-grid">
-        <article class="feature-card card-lilac">
-          <div class="card-top"><span>01</span></div>
+      <p class="case-tools">
+        Data Quality · Data Modeling · Agile · Stakeholder Communication
+      </p>
+    </article>
+
+    <!-- OTHER PROFESSIONAL EXPERIENCE -->
+    <article class="case-study card-mint">
+      <p class="case-meta">INNO4HEALTH · 2024</p>
+      <h3 class="anchored">AFib Detection on ECG</h3>
+      <p class="case-role">EngD industry project</p>
+
+      <p>
+        Processed single-lead ECG recordings into 30-second windows
+        and extracted time-domain features, identifying 21 features
+        relevant to AFib detection.
+      </p>
+      <p>
+        Worked in a five-person Agile team and discussed findings
+        with stakeholders during weekly reviews.
+      </p>
+
+      <p class="case-tools">
+        ECG Analysis · Feature Extraction · Agile
+      </p>
+    </article>
+
+    <article class="case-study card-yellow">
+      <p class="case-meta">KNSB · ALLIANDER · OMRON · 2024</p>
+      <h3 class="anchored">Industry Collaborations</h3>
+      <p class="case-role">EngD industry projects</p>
+
+      <h4 class="anchored">Omron</h4>
+      <p>
+        Analyzed 42 stitching-machine sensor signals to identify
+        equipment fault indicators for predictive maintenance.
+      </p>
+
+      <h4 class="anchored">Alliander</h4>
+      <p>
+        Clustered 30,000 customer records into eight load-profile
+        segments to estimate power requirements for new customers.
+      </p>
+
+      <h4 class="anchored">KNSB</h4>
+      <p>
+        Led a team analyzing over 500,000 skating records,
+        segmenting athletes by age and venue to compare engagement.
+      </p>
+
+      <p class="case-tools">
+        Data Analysis · Clustering · Team Leadership
+      </p>
+    </article>
+
+    <article class="case-study card-lilac">
+      <p class="case-meta">TATA CONSULTANCY SERVICES · 2016–2018</p>
+      <h3 class="anchored">Software Developer</h3>
+      <p class="case-role">Client: Morgan Stanley</p>
+
+      <p>
+        Supported production batch job migrations across regions,
+        monitored execution against SLA windows, and reported
+        failed or delayed runs.
+      </p>
+
+      <p class="case-tools">
+        Production Support · Batch Operations · SLA Monitoring
+      </p>
+    </article>
+  </div>
+
+  <a class="btn btn-dark experience-question" href="#questions">
+    ASK ABOUT MY WORK ↗
+  </a>
+</section>
+
+    <!-- SKILLS -->
+    <section class="section-wrap" id="skills">
+      <div class="section-marker">03 / SKILLS</div>
+      <h2 class="anchored">My <em>toolbox.</em></h2>
+
+      <div class="supporting-grid">
+        <article class="small-work-card tone-lilac">
           <h3 class="anchored">Programming</h3>
-          <p>Python</p>
-          <p>SQL</p>
-          <p>PySpark</p>
+          <p>Python · SQL · PySpark</p>
+          <p>
+            Used across data preparation, analysis, validation,
+            feature engineering, and modeling.
+          </p>
         </article>
 
-        <article class="feature-card card-yellow">
-          <div class="card-top"><span>02</span></div>
+        <article class="small-work-card tone-yellow">
           <h3 class="anchored">Data Engineering</h3>
           <p>
-            Azure Databricks, Delta Lake, ETL pipelines,
-            data transformation, and data modeling.
+            Azure Databricks · Delta Lake · ETL Pipelines ·
+            Data Transformation · Data Modeling
           </p>
           <p>
-            Azure DevOps, GitHub, CI/CD, and model monitoring.
+            Azure DevOps · GitHub · CI/CD · Model Monitoring
           </p>
         </article>
 
-        <article class="feature-card card-mint">
-          <div class="card-top"><span>03</span></div>
-          <h3 class="anchored">AI &amp; Machine Learning</h3>
+        <article class="small-work-card tone-mint">
+          <h3 class="anchored">Machine Learning &amp; Collaboration</h3>
           <p>XGBoost · GRU · LSTM</p>
-          <span class="card-bottom">
-            COLLABORATION · AGILE / SCRUM
-          </span>
+          <p>
+            Stakeholder requirements · Agile/Scrum ·
+            Technical communication
+          </p>
         </article>
       </div>
     </section>
 
+    <!-- LANGUAGES -->
     <section class="about-section section-wrap" id="languages">
       <div class="section-marker">04 / LANGUAGES</div>
-
       <div class="about-grid">
         <h2 class="anchored">Languages</h2>
         <div class="about-text">
@@ -335,52 +507,45 @@ ul.task-list li input[type="checkbox"] {
       </div>
     </section>
 
-    <section class="explore-section section-wrap" id="education">
-      <div class="section-head">
-        <div>
-          <div class="section-marker">05 / EDUCATION</div>
-          <h2 class="anchored">My <em>education.</em></h2>
-        </div>
+    <!-- EDUCATION -->
+    <section class="section-wrap" id="education">
+      <div class="section-marker">05 / EDUCATION</div>
+      <h2 class="anchored">Learning &amp; <em>research.</em></h2>
+
+      <div class="supporting-grid">
+        <article class="small-work-card tone-lilac">
+          <div class="work-meta">2024–2026</div>
+          <h3 class="anchored">EngD Data Science</h3>
+          <p class="institution">Eindhoven University of Technology</p>
+          <p>
+            Contract program combining data science work
+            with practical industry challenges.
+          </p>
+        </article>
+
+        <article class="small-work-card tone-yellow">
+          <div class="work-meta">2018–2021</div>
+          <h3 class="anchored">M.Sc. Computing Science</h3>
+          <p class="institution">University of Groningen</p>
+          <p>
+            Master’s studies including research in neural networks
+            and neuroimaging.
+          </p>
+        </article>
+
+        <article class="small-work-card tone-mint">
+          <div class="work-meta">2011–2015</div>
+          <h3 class="anchored">B.E. Computer Engineering</h3>
+          <p class="institution">Savitribai Phule Pune University</p>
+          <p>Bachelor’s degree in Computer Engineering.</p>
+        </article>
       </div>
 
-      <div class="card-grid">
-        <article class="feature-card card-lilac">
-          <div class="card-top">
-            <span>TU EINDHOVEN · 2024–2026</span>
-          </div>
-          <h3 class="anchored">EngD Data Science</h3>
-          <p>
-            Industry-focused data science program (contract),
-            combining research and practical challenges.
-          </p>
-        </article>
-
-        <article class="feature-card card-yellow">
-          <div class="card-top">
-            <span>UNIVERSITY OF GRONINGEN · 2018–2021</span>
-          </div>
-          <h3 class="anchored">M.Sc. Computing Science</h3>
-          <p>
-            Research in neural networks and neuroimaging.
-          </p>
-        </article>
-
-        <article class="feature-card card-mint">
-          <div class="card-top">
-            <span>SAVITRIBAI PHULE PUNE UNIVERSITY · 2011–2015</span>
-          </div>
-          <h3 class="anchored">B.E. Computer Engineering</h3>
-          <p>
-            Bachelor’s degree in Computer Engineering.
-          </p>
-        </article>
-
-      <article class="feature-card card-lilac">
-        <div class="card-top">
-          <span>UNIVERSITY OF GRONINGEN · 2021</span>
-        </div>
-        <p class="project-type">M.Sc. Thesis</p>
-        <h3 class="anchored">Relevance Learning in Neuroimaging</h3>
+      <div class="research-grid">
+        <article class="small-work-card tone-lilac">
+          <div class="work-meta">M.SC. THESIS · 2021</div>
+          <h3 class="anchored">Relevance Learning in Neuroimaging</h3>
+          <p class="institution">University of Groningen</p>
           <p>
             Integrated FDG PET data from three hospitals into
             a consistent dataset and corrected hospital-specific bias.
@@ -390,84 +555,48 @@ ul.task-list li input[type="checkbox"] {
             on 175 cases, achieving approximately 85% AUROC,
             and assessed feature relevance.
           </p>
-          <span class="card-bottom">
-            NEURAL NETWORKS · NEUROIMAGING
-          </span>
         </article>
 
-      <article class="feature-card card-yellow">
-        <div class="card-top">
-          <span>UNIVERSITY OF GRONINGEN · 2020</span>
-        </div>
-        <p class="project-type">M.Sc. Research Internship</p>
-        <h3 class="anchored">Hidden Unit Specialization</h3>
+        <article class="small-work-card tone-yellow">
+          <div class="work-meta">M.SC. RESEARCH INTERNSHIP · 2020</div>
+          <h3 class="anchored">Hidden Unit Specialization</h3>
+          <p class="institution">University of Groningen</p>
           <p>
             Investigated how dataset size and activation functions
             affected neural network generalization and hidden
             unit specialization.
           </p>
-          <span class="card-bottom">
-            NEURAL NETWORKS · RELU · SIGMOID
-          </span>
         </article>
       </div>
     </section>
 
-    <section class="explore-section section-wrap" id="training">
-      <div class="section-head">
-        <div>
-          <div class="section-marker">
-            06 / TRAINING &amp; HACKATHONS
-          </div>
-          <h2 class="anchored">Training &amp; <em>Hackathons.</em></h2>
-        </div>
-      </div>
+    <section class="section-wrap" id="languages">
+      <div class="section-marker">06 / LANGUAGES</div>
+      <h2 class="anchored">Languages</h2>
+      <p>English · Hindi · Marathi · Dutch (A1/A2)</p>
+    </section>
 
-      <div class="card-grid">
-        <article class="feature-card card-mint">
-          <div class="card-top">
-            <span>TU EINDHOVEN · APRIL 2025</span>
-          </div>
+    <section class="section-wrap" id="training">
+      <div class="section-marker">07 / TRAINING &amp; HACKATHONS</div>
+      <h2 class="anchored">Training &amp; Hackathons</h2>
+
+      <div class="supporting-grid">
+        <article class="small-work-card tone-mint">
+          <div class="work-meta">APRIL 2025</div>
           <h3 class="anchored">Spring HPC School</h3>
+          <p class="institution">TU Eindhoven</p>
           <p>
             Completed training at the Eindhoven Supercomputing Center.
           </p>
         </article>
 
-        <article class="feature-card card-lilac">
-          <div class="card-top">
-            <span>TU EINDHOVEN / JADS · APRIL 2024</span>
-          </div>
+        <article class="small-work-card tone-lilac">
+          <div class="work-meta">APRIL 2024</div>
           <h3 class="anchored">Solve with Google Hackathon</h3>
+          <p class="institution">TU Eindhoven / JADS</p>
           <p>Participated as a member of Team 3.</p>
         </article>
       </div>
-    </section>
-
-    <section class="closing-section section-wrap" id="questions">
-      <div class="section-marker">07 / QUESTIONS</div>
-      <h2 class="anchored">Have a <em>question?</em></h2>
-
-      <!-- Connect a form service before enabling submissions. -->
-      <form id="question-form" aria-describedby="form-status">
-        <p>
-          <label for="visitor-email">Your email</label>
-          <input id="visitor-email" name="email" type="email" autocomplete="email" required="">
-        </p>
-
-        <p>
-          <label for="visitor-question">Your question</label>
-          <textarea id="visitor-question" name="message" rows="5" required=""></textarea>
-        </p>
-
-        <button class="btn btn-dark" type="submit" disabled="">
-          SEND QUESTION
-        </button>
-
-        <p id="form-status" class="small-note">
-          The question form is not available yet.
-        </p>
-      </form>
     </section>
   </main>
 
@@ -478,47 +607,12 @@ ul.task-list li input[type="checkbox"] {
   </footer>
 </div>
 
-<style>
-  #question-form {
-    max-width: 540px;
-    margin: 24px auto 0;
-    text-align: left;
-  }
-
-  #question-form label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 600;
-  }
-
-  #question-form input,
-  #question-form textarea {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 14px;
-    border: 1px solid #666;
-    border-radius: 8px;
-    background: #fff;
-    color: #222;
-    font: inherit;
-  }
-
-  #question-form input:focus-visible,
-  #question-form textarea:focus-visible {
-    outline: 3px solid #6551b8;
-    outline-offset: 3px;
-  }
-
-  #question-form button:disabled {
-    opacity: 0.6;
-    cursor: not-allowed;
-  }
-</style>
-
 <script>
   (() => {
     const button = document.getElementById("rabbitTalk");
     const bubble = document.getElementById("speech");
+
+    if (!button || !bubble) return;
 
     const messages = [
       "Eh… what’s up, doc?",
@@ -533,11 +627,6 @@ ul.task-list li input[type="checkbox"] {
       current = (current + 1) % messages.length;
       bubble.textContent = messages[current];
     });
-
-    document.getElementById("question-form").addEventListener(
-      "submit",
-      (event) => event.preventDefault()
-    );
   })();
 </script>
 
